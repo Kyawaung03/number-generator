@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="assets/videos/background.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Video Overlay -->
+    <div class="video-overlay"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-section">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </div>
+            <h1 class="title">Number Generator</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Settings Section -->
+            <div class="settings-section">
+                <div class="setting-group">
+                    <label for="amount-slider" class="setting-label">
+                        <span class="label-text">Jumlah Angka</span>
+                        <span class="label-value" id="amount-value">1</span>
+                    </label>
+                    <input 
+                        type="range" 
+                        id="amount-slider" 
+                        class="slider" 
+                        min="1" 
+                        max="9" 
+                        value="1"
+                        aria-label="Jumlah angka yang akan di-generate"
+                    >
+                    <div class="slider-marks">
+                        <span class="mark">1</span>
+                        <span class="mark">2</span>
+                        <span class="mark">3</span>
+                        <span class="mark">4</span>
+                        <span class="mark">5</span>
+                        <span class="mark">6</span>
+                        <span class="mark">7</span>
+                        <span class="mark">8</span>
+                        <span class="mark">9</span>
+                    </div>
+                </div>
+
+                <!-- Quick Preset Buttons -->
+                <div class="quick-presets">
+                    <button class="preset-btn" data-amount="1" aria-label="Generate 1 angka">1</button>
+                    <button class="preset-btn" data-amount="3" aria-label="Generate 3 angka">3</button>
+                    <button class="preset-btn" data-amount="5" aria-label="Generate 5 angka">5</button>
+                    <button class="preset-btn" data-amount="7" aria-label="Generate 7 angka">7</button>
+                    <button class="preset-btn" data-amount="9" aria-label="Generate 9 angka">9</button>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <button class="info-toggle" id="info-toggle" aria-label="Tampilkan informasi">
+                    <span class="info-icon">ⓘ</span>
+                </button>
+                <div class="info-panel hidden" id="info-panel">
+                    <h3>Tentang Generator Ini</h3>
+                    <ul>
+                        <li>✓ Angka unik (tidak ada yang sama)</li>
+                        <li>✓ Tidak ada twin (11, 22, dll)</li>
+                        <li>✓ Tidak berurutan (tidak naik/turun 1 angka)</li>
+                        <li>✓ Hasil otomatis tersalin ke clipboard</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-section">
+                <div class="result-container" id="result-container">
+                    <div class="result-placeholder">Klik Generate untuk mulai</div>
+                </div>
+            </div>
+
+            <!-- Button Section -->
+            <div class="button-section">
+                <button class="generate-btn" id="generate-btn" aria-label="Generate dan copy angka">
+                    <span class="btn-text">GENERATE</span>
+                </button>
+
+                <!-- Settings Toggle -->
+                <button class="settings-toggle" id="settings-toggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Number Generator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/generator.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
