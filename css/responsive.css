@@ -1,0 +1,322 @@
+/* ===================================
+   TABLET BREAKPOINT (768px)
+   =================================== */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+
+    .header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .logo-section {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        padding: var(--spacing-lg);
+        max-width: 100%;
+    }
+
+    .button-section {
+        flex-direction: column;
+    }
+
+    .generate-btn {
+        min-width: 100%;
+    }
+
+    .settings-toggle {
+        width: 100%;
+    }
+
+    .info-panel {
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+
+    .quick-presets {
+        gap: var(--spacing-xs);
+    }
+
+    .preset-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+
+    .result-numbers {
+        gap: var(--spacing-sm);
+    }
+
+    .number-card {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ===================================
+   MOBILE BREAKPOINT (480px)
+   =================================== */
+@media (max-width: 480px) {
+    :root {
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+
+    .container {
+        padding: var(--spacing-sm);
+        justify-content: flex-start;
+        padding-bottom: 100px;
+    }
+
+    .header {
+        margin-bottom: var(--spacing-lg);
+        margin-top: var(--spacing-md);
+    }
+
+    .logo-section {
+        width: 60px;
+        height: 60px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .main-content {
+        padding: var(--spacing-md);
+        border-radius: var(--radius-md);
+    }
+
+    .setting-label {
+        font-size: 0.8rem;
+    }
+
+    .label-value {
+        min-width: 28px;
+        font-size: 0.8rem;
+    }
+
+    .slider-marks {
+        font-size: 0.65rem;
+    }
+
+    .quick-presets {
+        gap: 0.4rem;
+    }
+
+    .preset-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.75rem;
+    }
+
+    .info-section {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .info-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .info-panel {
+        width: 100%;
+        padding: var(--spacing-sm);
+        font-size: 0.8rem;
+    }
+
+    .info-panel h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-panel li {
+        font-size: 0.75rem;
+    }
+
+    .result-container {
+        padding: var(--spacing-md);
+        min-height: 100px;
+    }
+
+    .result-placeholder {
+        font-size: 0.9rem;
+    }
+
+    .result-numbers {
+        gap: var(--spacing-xs);
+    }
+
+    .number-card {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .generate-btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-text {
+        font-size: 0.9rem;
+    }
+
+    .settings-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .button-section {
+        gap: var(--spacing-sm);
+    }
+
+    .footer {
+        padding: var(--spacing-sm);
+        font-size: 0.75rem;
+    }
+}
+
+/* ===================================
+   SMALL MOBILE BREAKPOINT (320px)
+   =================================== */
+@media (max-width: 320px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .preset-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.7rem;
+    }
+
+    .number-card {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .generate-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+}
+
+/* ===================================
+   LANDSCAPE ORIENTATION
+   =================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .container {
+        padding: var(--spacing-md) var(--spacing-lg);
+        padding-bottom: 60px;
+    }
+
+    .header {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .logo-section {
+        width: 60px;
+        height: 60px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding: var(--spacing-md);
+    }
+
+    .result-container {
+        min-height: 80px;
+        padding: var(--spacing-md);
+    }
+
+    .number-card {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ===================================
+   HIGH RESOLUTION DISPLAYS
+   =================================== */
+@media (min-width: 1200px) {
+    .main-content {
+        max-width: 700px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .generate-btn {
+        min-width: 350px;
+        font-size: 1.2rem;
+        padding: var(--spacing-lg) var(--spacing-xl);
+    }
+
+    .number-card {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+}
+
+/* ===================================
+   TOUCH DEVICES OPTIMIZATION
+   =================================== */
+@media (hover: none) and (pointer: coarse) {
+    button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .generate-btn {
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+
+    .preset-btn:hover {
+        background: var(--color-red);
+        color: var(--color-white);
+    }
+
+    input[type="range"] {
+        height: 12px;
+    }
+}
+
+/* ===================================
+   PRINT MEDIA
+   =================================== */
+@media print {
+    .background-video,
+    .video-overlay,
+    .button-section,
+    .footer,
+    .settings-toggle {
+        display: none;
+    }
+
+    .main-content {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
